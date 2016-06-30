@@ -1,12 +1,39 @@
 {
-	"name"		: "CT-WebScraper",
-	"version"	: "0.0.1",
-	"description"	: "Scrape le web.",
-	"main"		: "server.js",
-	"author"	: "Scotch",
-	"dependencies"	: {
-	"express"	: "latest",
-	"request"	: "latest",
-	"cheerio"	: "latest"
-	}
-} 
+  "name": "webscraper",
+  "version": "0.0.1",
+  "description": "Scrape le web.",
+  "main": "server.js",
+  "author": "Scotch",
+  "dependencies": {
+    "cheerio": "^0.20.0",
+    "express": "^4.14.0",
+    "handlebars": "^4.0.5",
+    "path": "^0.12.7",
+    "request": "^2.72.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SillyStringz/CT-WebScraper.git"
+  },
+  "keywords": [
+    "Scraping",
+    "the",
+    "web",
+    "one",
+    "line",
+    "of",
+    "HTML",
+    "at",
+    "a",
+    "time"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SillyStringz/CT-WebScraper/issues"
+  },
+  "homepage": "https://github.com/SillyStringz/CT-WebScraper#readme"
+}

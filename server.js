@@ -13,7 +13,8 @@ app.get('/scrape', function(req, res) {
                     var $ = cheerio.load(html);
 
                     var name, imageUrl, author, price;
-                    var json = { name: "", imageURL: "", author: "", price: "" };
+                    //var jsonBooks = { name: "", imageURL: "", author: "", price: "" };
+                    var jsonBooks = [];
 
                     $('.panel').each(function() {
                         var data = $(this);
@@ -23,7 +24,7 @@ app.get('/scrape', function(req, res) {
                         var price = data.children().eq(1).children().eq(2).text();
                         var json = { name: name, imageUrl: imageUrl, author: author, price: price };
 
-                        jsonFULL.push(json);
+                        jsonBooks.push(json);
                     });
                 }
 
